@@ -2537,12 +2537,20 @@ code {
   */
 
   /* 8.1 Featurettes Quote */
-  .featurettes-quote-wrapper {
+  .featurettes-essay-wrapper {
   	background: url(../images/stocks/events.jpg) no-repeat center center;
   	background-size: cover;
   	height: 500px;
   }
 
+ .featurettes-quote-wrapper {
+  	background: url(../images/events/leancamp_london_chat.jpg) no-repeat center center;
+  	background-size: cover;
+  	height: 500px;
+  }
+
+
+  .featurettes-essay-wrapper .vertical-center-content,
   .featurettes-quote-wrapper .vertical-center-content {
   	background: rgba(26, 169, 230, 0.85);
   }
