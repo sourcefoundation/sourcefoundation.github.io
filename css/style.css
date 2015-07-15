@@ -1641,7 +1641,7 @@ code {
  	top: 0;
  	left: 0;
  	padding: 10px 0;
- 	background: #212C37;
+ 	background: #000;
  	-webkit-transition: all 0.27s ease-in-out;
  	transition: all 0.27s ease-in-out;
  	-webkit-transform: translateY(-100%);
