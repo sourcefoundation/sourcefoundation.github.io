@@ -1,2 +1,2 @@
 # sourcefoundation.github.io
-The website for the [http://source.foundation](Source Foundation)
+The website for the [Source Foundation](http://source.foundation)
