@@ -1,979 +1,1409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
+
+    <meta charset="utf-8" />
+    <title>Source Institute</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+		
+	<!-- CSS Files -->
+		
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/flexslider.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/gradients.css" />
+	<link rel="stylesheet" href="css/player/YTPlayer.css" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+	<!-- Theme Panel -->
+	<link rel="stylesheet" href="theme-panel/theme_panel.css" />
+	<!-- Skin Colors -->
+	<link id="changeable-colors" rel="stylesheet" href="css/colors/green.css" />
+
+	<!-- End CSS Files -->
+ 
+</head>
+
+<body>
 
 
-	<title>Source Institute</title>
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:700,400|Varela+Round">
-
-	<!-- Font Icon -->
-	<link rel="stylesheet" href="fonts/icomoon/icomoon.css">
-
-	<!-- Swipebox -->
-	<link rel="stylesheet" href="css/swipebox.css">
-
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.min.css">
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style-responsive.css">
-	<link rel="stylesheet" href="css/expandableGallery.css">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	      <![endif]-->
-	      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<!-- Page Loader -->
+	<section id="pageloader">
+		<div class="loader-item fa fa-spin colored-border"></div>
+	</section>
 
 
-
-	      <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-	      <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-	      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-	      <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-	      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-	      <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-	      <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-	      <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-	      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-	      <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-	      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	      <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-	      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-	      <link rel="manifest" href="/manifest.json">
-	      <meta name="msapplication-TileColor" content="#ffffff">
-	      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	      <meta name="theme-color" content="#ffffff">
-
-
-	    </head>
-
-	    <body>
-
-	  	<!--
-		==========================
-		== BEGIN HEADER CONTENT ==
-		==========================
-	-->
-	<header id="main-header" class="the-header the-origin-header">
-
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<a href="" class="logo"><img src="images/source_institute_123.png" alt="Source Logo"></a> <!-- Your Logo -->
-
-					<a href="index.html#0" id="nav-menu-trigger" class="menu-toggle pull-right all-caps">Menu<span class="icon-menu5"></span></a> <!-- Menu Toggle -->
-
-				</div> <!--/ .col-lg-12 -->
-
-			</div> <!--/ .row -->
-		</div> <!--/ .container -->
-
-	</header>
-	  	<!--
-		=========================
-		==/ END HEADER CONTENT ==
-		=========================
-	-->
+	<!-- Navigation -->
+	<section id="navigation" class="not-visible-nav white-nav">
+		<!-- Navigation Inner -->
+		<div class="nav-inner">
+			<!-- Site Logo -->
+			<div class="site-logo">
+				<a href="#home" class="scroll logo">
+					<!-- Your Logo -->
+					<img src="images/logos/sourcelogo_black.svg" alt="logo" />
+				</a>
+			</div><!-- End Site Logo -->
+			<a class="mini-nav-button dark"><i class="fa fa-bars"></i></a>
+			<!-- Navigation Menu -->
+			<div class="nav-menu">
+				<ul class="nav ">
+					<li><a href="#about" class="scroll">Programmes</a></li>
+					<li><a href="#clients" class="scroll">Clients</a></li>
+					<li><a href="#tools" class="scroll">Tools</a></li>
+					<li><a href="#ethos" class="scroll">Ethos</a></li>
+					<li><a href="#history" class="scroll">History</a></li>
+					<li><a href="#services" class="scroll">Services</a></li>
+					<li><a href="#team" class="scroll">Team</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+				</ul>
+			</div><!-- End Navigation Menu -->
+		</div><!-- End Navigation Inner -->
+	</section><!-- End Navigation Section -->
 
 
-		<!--
-		============================
-		== BEGIN NAV MENU CONTENT ==
-		============================
-	-->
-	<nav id="nav-wrapper">
-
-		<a class="nav-close" href="index.html#0"><span class="icon-cross2"></span></a>
-
-		<ul id="main-nav" class="main-nav all-caps">
-			<li class="current"><a href="index.html#hero">Home</a></li>
-			<li><a href="index.html#what-we-do">What We Do</a></li>
-			<li><a href="index.html#essays">Essays</a></li>
-			<li><a href="index.html#events">Events</a></li>
-		</ul> <!--/ .main-nav -->
 
 
-	</nav>
-		<!--
-		===========================
-		==/ END NAV MENU CONTENT ==
-		===========================
-	-->
 
 
-		<!--
-		========================
-		== BEGIN MAIN CONTENT ==
-		========================
-	-->
-	<main id="main-content" class="hero-subscribe-layout" style="margin-bottom: 234px;"> <!-- margin value is the height of your footer -->
-
-			<!--
-			========================
-			== BEGIN MODEL SECTION ==
-			========================
-		-->
-		<section id="hero">
-
-			<div class="container">
-
-				<div class="vertical-center-wrapper">
-					<div class="vertical-center-table">
-						<div class="vertical-center-content">
-
-							<!-- BEGIN Model Content -->
-							<div class="hero-content row centered">
-								<div class="col-lg-12">
-
-									<p class="lead text-shadow-small" data-sr="enter top over 1s and move 50px wait 0.4s">The Source Institute</p>
-									<h1 class="text-shadow-medium" data-sr="enter top over 1s and move 50px wait 0.3s"> Learn from the source</h1>
-
-
-									<!-- BEGIN Model Subscribe -->
-									<div class="row">
-										<div class="hero-subscribe-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-
-											<form id="hero-subscribe" class="the-subscribe-form" data-sr="enter bottom over .5s and move 10px wait 0.3s">
-
-												<small class="helper-text" data-sr="enter bottom over .5s and move 50px wait 0.3s"> <em></em></small>
-
-											</div><!--/ .model-subscribe-wrapper -->
-										</div> <!--/ .row -->
-										<!--/ End Model Subscribe -->
+	<!-- Home Section -->
+	<section id="home"> 	
+		<div id="slides" class="home-pattern-style parallax">
+			<div class="home-details">
+				<!-- Your Logo -->
+				<div class="logo">
+					<img src="images/logos/sourcelogo.png" alt="Logo" />
+				</div>
+				<div class="hometexts">
+						<!-- Slide Texts -->
+						<ul class="slide-text condensed">
+							<li class="hometext "></span></li>
+						</ul>
+				</div>
+				<!-- Fixed Text -->
+				<h1 class="fixed-text"> </h1>
+				<!-- Home Categories -->
+				<ul class="home-categories">
+					<li class="h-item ">Ecosystem Building</li>
+					<li class="h-item ">Founder Education</li>
+					<li class="h-item ">Programme Design</li>
+					<li class="h-item ">Pre-accelerators</li>
+					<li class="h-item ">Unconferences </li>
+				</ul>
+				<!-- Bottom Arrow -->
+				<a href="#about" class="home-arrow scroll uppercase bold">
+				</a>
+			</div><!-- End Home Texts -->
+		</div><!-- End Home Details -->
+	</section><!-- End Home Section -->
 
 
-									</div> <!--/ .col-lg-12 -->
-								</div> <!--/ .row -->
-								<!-- END Model Content -->
-
-							</div> <!--/ .vertical-center-content -->
-						</div> <!--/ .vertical-center-table -->
-					</div> <!-- / .vertical-center-wrapper -->
-
-				</div> <!--/ .container -->
-
-			</section>
-			<!--
-			=======================
-			==/ END MODEL SECTION ==
-			=======================
-		-->
 
 
-			<!--
-			==============================
-			== BEGIN WHAT WE DO SECTION ==
-			==============================
-		-->
-		<section id="what-we-do" class="centered">
 
-			<div class="container buz-model">
+
+	<!-- About -->
+	<section id="about" class="container waypoint">
+		<div class="inner ">
+			<!-- Header -->
+			<h1 class="header semibold dark">We're a global network, dedicated to peer-to-peer learning.</h1>
+			<div class="boxes">
+				<div class="row">
+					<!-- Box 1 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="100">
+						<a class="about-icon">
+							<i class="fa fa-fire"></i>
+						</a>
+						<p class="uppercase normal about-head">Leancamp </p>
+						<p class="light about-text">Connecting the world's leading Lean, Agile and Design-led  businesses.  Leancamp is a grassroots startup conference that's run in  15 cities around the world.</p>
+					</div>
+
+					<!-- Box 2 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="300">
+						<a class="about-icon">
+							<i class="fa fa-level-up"></i>
+						</a>
+						<p class="uppercase normal about-head">Village Accelerator</p>
+						<p class="light about-text">An accelerator for the world's most unlikely tech founders.  Village  Accelerator is an  open-source, in-person training programme run with  Roma people in  Bulgaria, designed to be syndicated to The Next  Billion.</p>
+					</div>
+
+					<!-- Box 3 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="500">
+						<a class="about-icon">
+							<i class="fa fa-book"></i>
+						</a>
+						<p class="uppercase normal about-head">Starter  Pack</p>
+						<p class="light about-text">What would they do if they were just starting out today? Starter  Pack is a blog that interviews a diverse range of accomplished  professionals about starting  out.</p>
+					</div>
+				</div>
 				<div class="row">
 
-					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 centered">
+					<!-- Box 4 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="700">
+						<a class="about-icon">
+							<i class="fa fa-square"></i>
+						</a>
+						<p class="uppercase normal about-head">The  Sources</p>
+						<p class="light about-text"> Lessons from entrepreneurs on the same path.  The Sources is  an online course for African startups that shares practical advice on  Africa's unique  environment.</p>
+					</div>
+
+					<!-- Box 5 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="900">
+						<a class="about-icon">
+							<i class="fa fa-users"></i>
+						</a>
+						<p class="uppercase normal about-head">Source Camp</p>
+						<p class="light about-text">In-depth exchanges between leaders in startup education. Source Camp  is a curated, month-long plenary that brings together the the most  forward-thinking in startup  education.</p>
+					</div>
+
+					<!-- Box 6 -->
+					<div class="col-xs-6 col-sm-6 col-md-4 about-box animated" data-animation="fadeIn" data-animation-delay="1100">
+					<a class="about-icon">
+							<i class="fa fa-bolt"></i>
+						</a>
+
+						<p class="uppercase normal about-head">Source  Summit</p>
+						<p class="light about-text">Source Summit is an  inter-disciplinary conference, designed  to progress state-of-the-art  approaches through sharing practical and  current challenges.</p>
+					</div>
+					</div>
+				</div>
+			</div><!-- End Boxes -->
+		</div><!-- End About Inner -->
+	</section><!-- End About Section -->
 
 
-						<h2 class="section-heading">We're a global network dedicated to peer-to-peer learning.</h2>
 
-					</div> <!--/ .col-lg-8 -->
-
-					<div class="clearfix"></div>
-
-					<div class="col-lg-10 col-lg-offset-1">
-
-						<p><strong>The Source Institute</strong> is changing the future of entrepreneurship support by developing and syndicating peer-to-peer learning formats.  The Source Institute initiatives span 4 continents, and include a network of more than 50 leaders and 3,000 entrepreneurs . We build startup communities, and develop new, more practical ways of sharing knowledge in a fast-changing global environment.
-
-					</div><!--/ .col-lg-10 -->
-
-					<div class="clearfix"></div>
+	<!-- Testimonials -->
+	<section class="testimonials parallax2">
+		<div class="inner">
 
 
-				</div> <!--/ .row -->
-			</div> <!--/ .container -->
+			<ul class="t-slides">
 
-		</section>
-			<!--
-			=============================
-			==/ END WHAT WE DO SECTION ==
-			=============================
-		-->
+				<li class="monial">
+					<!-- Text -->
+					<h1 class="white"> "A fast-paced, intensive learning experience. You'll pick up a ton of stuff."</h1>
+				</li>
 
+			</ul>
 
-			<!--
-			================================
-			== BEGIN HOW IT WORKS SECTION ==
-			================================
-		-->
-		<section id="our-goals" class="gray-bg centered">
-			<div class="title-goals">
-						<p class="section-title">What We Do</p>
+		</div><!-- End Inner Div -->
+
+	</section><!-- End Testimonials Section -->
+
+	<!-- Portfolio -->
+	<section id="clients" class="container">
+
+		<div class="portfolio">
+
+			<!-- Header -->
+			<h1 class="header light dark"><span class="condiment">our work</span></h1>
+
+			<!-- Description -->
+			<h4 class="h-desc dark"></h4>
+
+		</div><!-- End inner div -->
+
+			<!-- Expander -->
+			<div class="item-expander relative">
+				<div id="item-expander">
+					<p class="cls-btn"><a class="close">X</a></p>
+					<div class="expander-inner"></div>
+				</div>
 			</div>
 
-			<div class="container-full">
-				<div class="row">
-					<ul >
+			<!-- Filters -->
+			<div id="options" class="filter-menu fullwidth">
+				<ul id="filters" class=" option-set relative normal" data-option-key="filter">
+					<li><a href="#filter" data-option-value="*" class="selected">show all</a></li>
+					<li><a href="#filter" data-option-value=".programmes">Programmes</a></li>
+					<li><a href="#filter" data-option-value=".creative">Creative</a></li>
+					<li><a href="#filter" data-option-value=".camps">camps</a></li>
+					<li><a href="#filter" data-option-value=".success">success</a></li>
+				</ul>
+			</div>
 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4><a href="http://leancamp.co"><img src="images/logos/leancamp.png" alt="" data-sr="enter bottom over 1s and move 80px wait 0.3s"></a></h4>
-                                <p>Connecting the world's leading Lean, Agile and Design-led businesses.
-                                <p>Leancamp is a grassroots startup conference that's run in 15 cities around the world.
-						</li> 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4><a href="http://villageaccelerator.org">Village Accelerator</a></h4> 
-                                <p>An accelerator for the world's most unlikely tech founders.
-                                <p>Village Accelerator is an open-source, in-person training programme run with Roma people in Bulgaria, designed to be syndicated to The Next Billion.
-						</li> 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4><a href="http://starterpack.co"><img src="images/logos/starterpack.jpg" alt="" data-sr="enter bottom over 1s and move 80px wait 0.3s"></a></h4>
-                                <p>What would they do if they were just starting out today?
-                                <p>Starter Pack is a blog that interviews a diverse range of accomplished professionals about starting out.
-						</li> 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4><a href="http://thesources.co"><img src="images/logos/thesources.png" alt="" data-sr="enter bottom over 1s and move 80px wait 0.3s"></a></h4>
-                                <p>Lessons from entrepreneurs on the same path.
-                                <p>The Sources is an online course for African startups that shares practical advice on Africa's unique environment.
-						</li> 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4><a href="http://source.camp">Source Camp</a></h4> <p> In-depth exchanges between leaders in startup education.
-                                <p>Source Camp is a curated, month-long plenary that brings together the the most forward-thinking in startup education.
-						</li> 
-						<li class="col-lg-2 col-md-2 col-sm-2">
-								<h4>Source Summit</h4> 
-                                <p>Source Summit is an inter-disciplinary conference, designed to progress state-of-the-art approaches through sharing practical and current challenges.
-						</li> 
+			<!-- Works -->
+			<div class="portfolio-items no-margin no-padding">
+
+				<!-- Work -->
+				<div class="work five design creative success">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-1.html" class="expander">
+								<img src="images/portfolio/210415-AfricaPrize.JPG" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">The Africa Prize</p>
+							<p class="work-category normal no-margin">We designed and delivered the education component of The Africa Prize, for a group of 11 engineers from all over Africa.  The programme centred around 2 weeks of training in South Africa and Kenya, and included the local startup communities.</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five creative success">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-2.html" class="expander">
+								<img src="images/portfolio/20150727_134841.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Leaders In Innovation</p>
+							<p class="work-category normal no-margin">We created a week-long set of workshops, which was run for 6 consecutive weeks by a group of experienced entrepreneurs we trained as teachers.  Each week was adapted on a weekly basis for the opportunities and stage of business, and regional opportrtunities.</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five programmes camps">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-3.html" class="expander">
+								<img src="images/portfolio/leancamp.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Seedcamp</p>
+							<p class="work-category normal no-margin">We’ve worked with each recent Seedcamp cohort on the practicalities of early-stage sales, marketing and customer development.  We've also designed and run workshops for their Mini-Seedcamp tour, to improve the quality of their applicants with custom, region-specific workhops.</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five design art">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-4.html" class="expander">
+								<img src="images/portfolio/village acclerator.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Village Accelerator</p>
+							<p class="work-category normal no-margin">We created a programming and entrepreneurship course for Roma people in Sofia, Bulgaria.  We taught teenagers to code, question customers, and analyse businesses.  The programme is entering it's second year in partnership with two local NGOs.</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five programmes success">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-5.html" class="expander">
+								<img src="images/portfolio/nemanja.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Oxford Immersion</p>
+							<p class="work-category normal no-margin">We designed the required entrepreneurship course for Oxford’s MBA program, and an extra-curricular weekend workshop to give students a real taste of startup life so they could make informed career decisions.
+</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five art creative">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-1.html" class="expander">
+								<img src="images/portfolio/6.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Creative Accelerator</p>
+							<p class="work-category normal no-margin">We developed a programme in Camden, London to teach artists how to create businesses from their skills. </p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five design programmes foreign success">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-2.html" class="expander">
+								<img src="images/portfolio/7.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Eleven Venture Fund</p>
+							<p class="work-category normal no-margin">Working with Eleven Venture Fund in Bulgaria, we designed and delivered localised customer development and pitch training workshops which ran in Turkey, Romania, Serbia, Montenegro and Bulgaria.
+</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Work -->
+				<div class="work five video programmes foreign">
+					<div class="work-inner">
+						<!-- Image -->
+						<div class="work-image">
+							<a href="projects/project-3.html" class="expander">
+								<img src="images/portfolio/8.jpg" alt="" />
+							</a>
+						</div>
+						<!-- Work Details -->
+						<div class="work-bottom">
+							<p class="work-name uppercase normal no-margin">Foreign exchange programmes for engineers</p>
+							<p class="work-category normal no-margin">We've designed and delivered London startup exchange programmes for Saudi Arabian, Bulgarian, and South Koreans, delivering entrepreneurship training designed specifically to address the perspectives of foreign engineers in London for the first time.</p>
+						</div>
+					</div><!-- End Work Inner -->
+				</div><!-- End Work -->
+
+				<!-- Clear -->
+				<div class="clear"></div>
+			</div><!-- End Works -->
+
+	</section><!-- End Porfolio Section -->
 
 
 
-					</ul>
-					<!--/ END How it Works Column -->
 
-				</div> <!--/ .row -->
-			</div> <!--/ .container-full -->
+	<section id="tools" class="container parallax1">
 
-		</section>
-			<!--
-			===============================
-			==/ END HOW IT WORKS SECTION ==
-			===============================
-		-->
+		<div class="inner">
 
+			<!-- Header -->
+			<h1 class="header bold white">Our Tools</h1>
 
-			<!--
-			================================
-			== BEGIN OUR LEAN MIXES SECTION ==
-			================================
-		-->
-        <!--
-		<section id="lean-mixes">
+			<!-- Description -->
+			<!-- <h4 class="h-desc white">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and by the <span class="white bold">charms</span> of pleasure of the moment, so blinded by desire, that they cannot foresee the pain </h4> -->
 
-			<div class="container">
-				<div class="row">
+			<!-- Boxes -->
+			<div class="service-boxes">
 
-					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 centered">
-
-						<p class="section-title">Intersections</p>
-
-						<h2 class="section-heading">.</h2>
-
-					</div> 
-
-					<div class="clearfix"></div>
-
-					<div class="the-feature col-lg-7 col-md-7 col-sm-6">
-
-						<a href="index.html#0">
-							<div class="row">
-								<div class="col-md-4 col-md-offset-4">
-									<div class="venndiagram diagram-one">UX</div>
-								</div>
-								<div class="col-md-4"></div>
-								<div class="col-md-6 left-padding"> 
-									<div class="venndiagram diagram-two">Lean</div>
-								</div>
-								<div class="col-md-6">
-									<div class="venndiagram diagram-three">Business Model</div>
-								</div>
-							</div>
-							
-						</a>
-
-					</div> 
-
-					<div class="the-feature col-lg-5 col-md-5 col-sm-6">
-
-						<a href="index.html#0">
-							<span class="feature-icon icon-trophy3"></span>
-
-							<h4 class="feature-title">Leancamp</h4>
-
-							<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						</a>
-
-					</div> 
+				<!-- Box 1 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="personal experience and research on accelerator design">
+					<!-- Icon -->
+					<a class="service-icon" href="http://guides.co/guide/the-accelerator-design-guide">
+						<i class="fa fa-book"></i>
+					</a>
+					<!-- Header -->
+					<a href="http://guides.co/guide/the-accelerator-design-guide"><p class="service-header light white">Accelerator Design Guide</p></a>
+				</div>
 
 
-					<div class="clearfix"></div>
-
-					<div class="the-feature zero-bottom col-lg-7 col-md-7 col-sm-6">
-
-						<a href="index.html#0">
-							<div class="row">
-								<div class="col-md-4 col-md-offset-4">
-									<div class="venndiagram diagram-one">TECH</div>
-								</div>
-								<div class="col-md-4"></div>
-								<div class="col-md-6 left-padding"> 
-									<div class="venndiagram diagram-two">ASIA</div>
-								</div>
-								<div class="col-md-6">
-									<div class="venndiagram diagram-three">AFRICA</div>
-								</div>
-							</div>
-						</a>
-
-					</div> 
-
+				<!-- Box 2 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title=" outlines how top-rated startup mentors thin">
+					<!-- Icon -->
 					
-					<div class="the-feature zero-bottom col-lg-5 col-md-5 col-sm-6">
+					<a class="service-icon" href="http://fnc.io/mentorimpact/">
+						<i class="fa fa-bullseye"></i>
+					</a>
+					<!-- Header -->
+					<a href="http://fnc.io/mentorimpact/"><p class="service-header light white">Mentor Impact</p></a>
+				</div>
 
-						<a href="index.html#0">
-							<span class="feature-icon icon-browser2"></span>
 
-							<h4 class="feature-title">The Source</h4>
+				<!-- Box 3 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="Sa card deck for prototyping and adapting accelerators">
+					<!-- Icon -->
+					
+					<a class="service-icon" href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Program%20design%20cards%20-%20Dec%202013.pdf">
+						<i class="fa fa-align-center"></i>
+					</a>
+					<!-- Header -->
+					<a href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Program%20design%20cards%20-%20Dec%202013.pdf"><p class="service-header light white">Accelerator Design Card</p></a>
+				</div>
 
-							<p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						</a>
 
-					</div>
-
-					<div class="clearfix"></div>
-
-				</div> 
-			</div> 
-
-		</section>
-        -->
-			<!--
-			===============================
-			==/ END OUR LEAN MIXES SECTION ==
-			===============================
-		-->
-
-
-			<!--
-			===============================
-			== BEGIN FEATURETTES SECTION ==
-			===============================
-		-->
-		<section id="essays" class="expandable-gallery gray-bg no-padding">
-
-			<div class="container-full">
-				<div class="row">
-
-					<div class="featurettes-essay-wrapper col-lg-6 col-md-6 col-sm-6 no-padding">
-
-						<div class="vertical-center-wrapper">
-
-							<div class="vertical-center-table">
-
-								<div class="vertical-center-content">
-
-									<div class="featurettes-quote centered">
-
-                                        Essays
-                                        <p>The major advances in startup education have yet to happen.  <p>As educators, we default to the approaches of teachers.  We act as knowledge intermediaries.  In the diverse, fast-changing world of business, this can be unnecessarily slow. We often fight against irrelevance to founders' current challenges and context. <p>The copy-paste flatness of one-way education will give rise to multi-faceted, peer-to-peer methods that focus on the learner, not the teacher. Collective learn by doing...
-                                        
-
-
-										
-
-									</div>
-
-								</div> <!--/ .vertical-center-content -->
-
-							</div> <!--/ .vertical-center-table -->
-
-						</div> <!--/ .vertical-center-wrapper -->
-
-					</div> <!--/ .col-lg-6 -->
-
-					<div class="expandable-gallery-info two-blocks-col col-lg-6 col-md-6 col-sm-6">
-
-                        Read more:
-
-						<ul class="">
-							<li><a href="http://saintsal.com/craft">Mastering the craft of entrepreneurship</a></li>
-							<li><a href="http://saintsal.com/the-next-billion/">Why startups are so different for The Next Billion</a></li>
-							<li><a href="https://medium.com/@SaintSal/a-startup-accelerator-for-the-worlds-poorest-ca9a1a6c9da0">A startup accelerator for the world’s poorest.</a></li>
-							<li><a href="http://saintsal.com/the-history-of-leanstartup-and-how-to-make-sense-of-it-all/">The History Of Lean Startup</a></li>
-							<li><a href="http://blog.foundercentric.com/true-ecosystems/">True Ecosystems</a></li>
-							<li><a href="http://saintsal.com/no-more-hubs-startup-community-is-p2p/">No more hubs: startup community is P2P</a></li>
-							<li><a href="http://saintsal.com/ambition">How I rediscovered my ambition</a></li>
-						</ul> <!--/ .checklist -->
-
-					</div> <!--/ .expandable-gallery-info -->
-					<!--/ END 1st Row Featurettes / Expandable Gallery Row -->
-
-					<div class="clearfix"></div>
-
-					<!-- BEGIN 2nd Row Featurettes -->
-					<div class="two-blocks-col col-lg-6 col-md-6 col-sm-6" id="events">
-
-						<h3>Upcoming Events</h3>
-
-						<!-- BEGIN Content Tab -->
-						<div class="content-tab-wrapper" role="tabpanel">
-
-							<!-- BEGIN Nav tabs -->
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active"><a href="index.html#sourcecamp" aria-controls="sourcecamp" role="tab" data-toggle="tab">Aug 1-30</a></li>
-								<li role="presentation"><a href="index.html#lcfrankfurt" aria-controls="lcfrankfurt" role="tab" data-toggle="tab">Oct 10</a></li>
-								<li role="presentation"><a href="index.html#lchcm" aria-controls="lchcm" role="tab" data-toggle="tab">Nov </a></li>
-								<li role="presentation"><a href="index.html#sslondon" aria-controls="sslondon" role="tab" data-toggle="tab">Nov</a></li>
-								<li role="presentation"><a href="index.html#lcnairobi" aria-controls="lcnairobi" role="tab" data-toggle="tab">Nov</a></li>
-								<li role="presentation"><a href="index.html#lcstuttgart" aria-controls="lcstuttgart" role="tab" data-toggle="tab">Nov 20</a></li>
-								<!-- <li role="presentation"><a href="index.html#fifth" aria-controls="fourth" role="tab" data-toggle="tab"><span class="icon-share3"></span>Sharing</a></li> -->
-							</ul>
-							<!--/ END Nav tabs -->
-
-
-							<!-- BEGIN Tab panes -->
-							<div class="tab-content">
-
-								<div role="tabpanel" class="tab-pane fade in active" id="sourcecamp">
-									<h6><a href="http://source.camp">Source Camp</a></h6>
-
-									<p>A month-long unconference where the leaders in startup education teach each other, and raise the bar for everyone.
-
-								</div> <!-- First Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="lcfrankfurt">
-									<h6><a href="http://leancamp.net/">Leancamp Frankfurt</a></h6>
-									<p>Connecting the world's leading Lean, Agile and Design-led businesses.
-								</div> <!-- Second Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="lcbangalore">
-									<h6><a href="http://leancamp.net/">Leancamp Bangalore</a></h6>
-									<p>Connecting the world's leading Lean, Agile and Design-led businesses.
-								</div> <!-- Second Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="lchcm">
-									<h6><a href="http://leancamp.net/">Leancamp Ho Chi Minh</a></h6>
-									<p>Connecting the world's leading Lean, Agile and Design-led businesses.
-									
-								</div> <!-- Third Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="lcstuttgart">
-									<h6><a href="http://leancamp.net/">Leancamp Stuttgart</a></h6>
-									<p>Connecting the world's leading Lean, Agile and Design-led businesses.
-								</div> <!-- Fourth Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="sslondon">
-									<h6>Source Summit London</h6>
-									<p>Connecting the world's top engineers to the most globalised startup community.
-								</div> <!-- Fourth Tab Pane -->
-
-								<div role="tabpanel" class="tab-pane fade" id="lcnairobi">
-									<h6><a href="http://leancamp.net/">Leancamp Nairobi</a></h6>
-									<p>Connecting the world's leading Lean, Agile and Design-led businesses.
-								</div> <!-- Fourth Tab Pane -->
-
-							</div>
-							<!--/ END Tab panes -->
-
-						</div> <!--/ .content-tab-wrapper -->
-						<!--/ END Content Tab -->
-
-					</div> <!--/ .two-blocks-col -->
-
-					<div class="featurettes-quote-wrapper col-lg-6 col-md-6 col-sm-6 no-padding">
-
-						<div class="vertical-center-wrapper">
-
-							<div class="vertical-center-table">
-
-								<div class="vertical-center-content">
-
-									<div class="featurettes-quote centered">
-
-                                        &quot; Fast paced, intensive learning experience. You'll pick up a ton of stuff. &quot;
-
-									</div>
-
-								</div> <!--/ .vertical-center-content -->
-
-							</div> <!--/ .vertical-center-table -->
-
-						</div> <!--/ .vertical-center-wrapper -->
-
-					</div> <!--/ .col-lg-6 -->
-					<!--/ END 2nd Row Featurettes -->
-
-
-				</div> <!--/ .row -->
-			</div> <!--/ .container-full -->
-
-		</section>
-			<!--
-			==============================
-			==/ END FEATURETTES SECTION ==
-			==============================
-		-->
-
-
-
-
-			<!--
-			============================
-			== BEGIN OUR TEAM SECTION ==
-			============================
-		-->
-		<section id="our-team" style="display:none">
-
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 centered">
-
-						<p class="section-title">Meet The Team</p>
-
-						<h2 class="section-heading">Our team is passionate about bringing you to the top.</h2>
-
-					</div> <!--/ .col-lg-8 -->
-
-					<div class="clearfix"></div>
-
-					<!--BEGIN The Team Wrapper -->
-					<div class="the-team-wrapper">
-
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-
-							<h4 class="all-caps hidden-xs">The Team</h4>
-
-							<a href="index.html#0" id="mobile-team-filter" class="mobile-filter-select visible-xs"><h4 class="all-caps">The Team<span class="icon-chevron-thin-down"></span></h4></a>
-
-							<ul class="filter">
-								<li class="current all"><a href="index.html#0">Everyone</a></li>
-								<li class="manager"><a href="index.html#0">Manager</a></li>
-								<li class="developer"><a href="index.html#0">Developer</a></li>
-								<li class="designer"><a href="index.html#0">Designer</a></li>
-								<li class="marketing"><a href="index.html#0">Marketing</a></li>
-								<li class="support"><a href="index.html#0">Support</a></li>
-							</ul> <!--/ .filter -->
-
-						</div> <!--/ .col-lg-3 -->
-
-						<!-- BEGIN Team Photos -->
-						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-
-							<div class="row">
-
-								<ul id="team_grid">
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-0 team-item" data-type="manager developer" data-id="id-1">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/Salim.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Salim Virani</h6>
-												<small>Founder of many startups. Very experience with Lean startup<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="http://github.com/saintsal"><span class="icon-link2"></span></a></li>
-													<li><a href="http://linkedin.com/in/salimvirani"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="http://twitter.com/saintsal"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6  team-item" data-type="manager marketing designer" data-id="id-2">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/team2.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Robert Doe</h6>
-												<small>An experienced Web/UX Designer on a mission to use his God-given gifts in design to help others.<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="index.html#0"><span class="icon-link2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6  team-item" data-type="designer developer" data-id="id-3">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/team3.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Hannah Doe</h6>
-												<small>An experienced Web/UX Designer on a mission to use his God-given gifts in design to help others.<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="index.html#0"><span class="icon-link2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6  team-item" data-type="marketing support" data-id="id-4">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/team3.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Megan Doe</h6>
-												<small>An experienced Web/UX Designer on a mission to use his God-given gifts in design to help others.<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="index.html#0"><span class="icon-link2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6  team-item" data-type="marketing support" data-id="id-5">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/team1.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Steve Doe</h6>
-												<small>An experienced Web/UX Designer on a mission to use his God-given gifts in design to help others.<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="index.html#0"><span class="icon-link2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-									<li class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-6  team-item" data-type="support" data-id="id-6">
-
-										<div class="team-item-content">
-
-											<img src="images/team-photo/team2.jpg" alt="Team Photo"/>
-
-											<div class="team-info centered">
-
-												<h6>Mike Doe</h6>
-												<small>An experienced Web/UX Designer on a mission to use his God-given gifts in design to help others.<br/><br class="visible-lg visible-xs"/>He has worked with people in many different countries, and from many different industries. </small>
-												<ul class="team-social">
-													<li><a href="index.html#0"><span class="icon-link2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-linkedin2"></span></a></li>
-													<li><a href="index.html#0"><span class="icon-twitter"></span></a></li>
-												</ul> <!--/ .team-social -->
-
-											</div> <!--/ .team-info -->
-
-										</div> <!--/ .team-item-content -->
-
-									</li> <!--/ .team-item -->
-
-								</ul> <!--/ #team_grid -->
-
-							</div> <!--/ .row -->
-
-						</div> <!--/ .col-lg-9 -->
-						<!-- END Team Photos -->
-
-					</div>
-					<!--BEGIN The Team Wrapper -->
-
-				</div> <!--/ .row -->
-			</div> <!--/ .container -->
-
-		</section>
-			<!--
-			===========================
-			==/ END OUR TEAM SECTION ==
-			===========================
-		-->
-
-
-	</main> <!--/ #main-content -->
-		<!--
-		=======================
-		==/ END MAIN CONTENT ==
-		=======================
-	-->
-
-
-		<!--
-		==========================
-		== BEGIN FOOTER CONTENT ==
-		==========================
-	-->
-	<footer id="main-footer">
-
-		<div class="container">
-			<div class="row">
-
-
-					<div class="copyright">
-
-						<p>&copy;2015 Source Institute - All rights reserved.
-                    &nbsp; <a href="mailto:info@source.institute">info@source.institute</a>
-
-
-					</div> <!--/ .copyright -->
-
-				</div> <!--/ .row -->
-			</div> <!--/ .container -->
-
-		</footer>
-		<!--
-		=========================
-		==/ END FOOTER CONTENT ==
-		=========================
-	-->
-
-
-		<!--
-		=========================
-		== BEGIN TO TOP BUTTON ==
-		=========================
-	-->
-	<a id="to-top"><span class="icon-chevron-thin-up"></span></a>
-		<!--
-		========================
-		==/ END TO TOP BUTTON ==
-		========================
-	-->
-
-		<!--
-		=================================
-		== BEGIN CONTACT MODAL CONTENT ==
-		=================================
-	-->
-	<div class="contact-overlay overlay-scale" >
-		<a class="overlay-close">Close</a>
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="contact-content col-lg-10 col-lg-offset-1 centered">
-
-					<h2 class="all-caps"> Contact Us </h2>
-
-					<p>Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas mollis interdum!</p>
-
-					<!-- BEGIN Contact Form -->
-					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
-
-						<form class="contact-form" id="contact-form" method="post">
-
-							<div class="row">
-
-								<div class="col-lg-6 col-md-6">
-
-									<div class="required-field">
-										<input name="fname" id="fname" class="contact-input"  type="text" placeholder="First Name">
-									</div> <!--/ .required-field -->
-
-								</div> <!--/ .col-lg-6 -->
-
-								<div class="col-lg-6 col-md-6">
-
-									<input name="lname" id="lname" class="contact-input" type="text" placeholder="Last Name">
-
-								</div> <!--/ .col-lg-6 -->
-
-								<div class="col-lg-12 col-md-12">
-
-									<div class="required-field">
-										<input name="email" id="email" class="contact-input" type="email" placeholder="Email Address">
-									</div> <!--/ .required-field -->
-
-								</div> <!--/ .col-lg-12 -->
-
-								<div class="col-lg-12 col-md-12">
-
-									<input name="subject" id="subject" class="contact-input" type="text" placeholder="Subject">
-
-								</div> <!--/ .col-lg-12 -->
-
-								<div class="col-lg-12 col-md-12">
-
-									<div class="required-field">
-										<textarea name="message" id="message" rows="9" placeholder="Message"></textarea>
-									</div> <!--/ .required-field -->
-
-								</div> <!--/ .col-lg-12 -->
-
-								<div class="col-lg-12 col-md-12 all-caps centered">
-
-									<button id="submit" type="submit" class="submit-btn">Submit</button>
-
-								</div> <!--/ .col-lg-12 -->
-
-							</div>
-
-						</form> <!--/ .contact-form -->
-
-					</div> <!--/ .col-lg-6 -->
-					<!--/ END Contact Form -->
-
-				</div> <!--/ .contact-content -->
-
-			</div> <!--/ .row -->
-
-		</div> <!--/ .container -->
-
-	</div> <!--/ .contact-overlay -->
-
-		<!--
-		================================
-		==/ END CONTACT MODAL CONTENT ==
-		================================
-	-->
-
-
-		<!--
-		======================================
-		== BEGIN FORM NOTIFICATIONS CONTENT ==
-		======================================
-	-->
-	<!-- BEGIN Subscribe Form Alert/Notification -->
-	<div id="subscribe-error-notification" class="notif-box">
-
-		<span class="icon-bullhorn notif-icon"></span>
-		<p>Subscribe error, please review your email address.</p>
-		<a class="notification-close">Close</a>
-
-	</div> <!--/ #error-notification -->
-
-	<div id="subscribe-success-notification" class="notif-box">
-
-		<span class="icon-checkmark notif-icon"></span>
-		<p>You're now subscribed, thank you!</p>
-		<a class="notification-close">Close</a>
-
-	</div> <!--/ #success-notification -->
-	<!-- END Subscribe Form Alert/Notifications -->
-
-
-	<!-- BEGIN Contact Form Alert/Notifications -->
-	<div id="error-notification" class="notif-box">
-
-		<span class="icon-bullhorn notif-icon"></span>
-		<p>There was a problem with your submission. Please check the field(s) with red label below.</p>
-		<a class="notification-close">Close</a>
-
-	</div> <!--/ #error-notification -->
-
-	<div id="success-notification" class="notif-box">
-
-		<span class="icon-checkmark notif-icon"></span>
-		<p>Your message has been sent. We'll get back to you soon!</p>
-		<a class="notification-close">Close</a>
-
-	</div> <!--/ #success-notification -->
-	<!-- END Contact Form Alert/Notifications -->
-		<!--
-		=====================================
-		==/ END FORM NOTIFICATIONS CONTENT ==
-		=====================================
-	-->
-
+				<!-- Box 4 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="An actionable dashboard for startup progress">
+					<!-- Icon -->
+					
+					<a class="service-icon" href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Accelerator%20Dashboard.pdf">
+						<i class="fa fa-bolt"></i>
+					</a>
+					<!-- Header -->
+					<a href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Accelerator%20Dashboard.pdf"><p class="service-header light white">Accelerator Dashboard</p></a>
+				</div>
+
+
+				<!-- Box 5 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="Digestable feedback on missing information">
+					<!-- Icon -->
+					
+					<a class="service-icon" href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Pitch%20Bingo.pdf">
+						<i class="fa fa-plus"></i>
+					</a>
+					<!-- Header -->
+					<a href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Pitch%20Bingo.pdf"><p class="service-header light white">Startup Pitch Bingo</p></a>
+				</div>
+
+
+				<!-- Box 6 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title=" A 1-hour peer-mentoring format for startups">
+					<!-- Icon -->
+					
+					 <a class="service-icon" href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Braintrust%20Welcome.pdf">
+						<i class="fa fa-lightbulb-o"></i>
+					</a>
+					<!-- Header -->
+					<a href="https://dl.dropboxusercontent.com/u/6606104/Founder-Centric%20Public/Braintrust%20Welcome.pdf"><p class="service-header light white">Braintrust</p></a>
+				</div>
+
+				<!-- Box 7 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="">
+					<!-- Icon -->
+
+					<a class="service-icon" href="http://www.custdevcards.com/">
+						<i class="fa fa-comments-o"></i>
+					</a>
+					<!-- Header -->
+					<a href="http://www.custdevcards.com/"><p class="service-header light white">Customer Development Method Cards</p></a>
+				</div>
+
+				<!-- Box 6 -->
+				<div class="col-xs-6 col-md-3 service-box animated" data-animation="fadeIn" data-animation-delay="200" data-toggle="tooltip" data-placement="top" title="">
+					<!-- Icon -->
+					<a class="service-icon" href="http://valuechaingeneration.com/2014/10/17/the-partnership-canvas/">
+						<i class="fa fa-users"></i>
+											</a>
+					<!-- Header -->
+					<a href="http://valuechaingeneration.com/2014/10/17/the-partnership-canvas/"><p class="service-header light white">Partnership Canvas</p></a>
+				</div>
+
+				<div class="clear"></div>
+
+			</div> <!-- End Boxes -->
+
+		</div><!-- End Service Inner -->
+
+	</section><!-- End Section -->
+
+
+
+
+
+
+
+    <!-- Why We Are -->
+    <section id="ethos" class="container parallax4">
+
+        <!-- Inner -->
+        <div class="inner">
+
+            <!-- Left Area -->
+            <div class="col-xs-6 left animated" data-animation="fadeInLeft" data-animation-delay="300">
+
+            </div>
+
+            <!-- Right Accordion -->
+            <div class="col-xs-6 right accourdion-menu">
+
+                <!-- Detail -->
+                <h1 class="header normal dark t-left">The major advances in education are <span class="colored condiment bigger">yet to happen</span></h1>
+
+                <!-- Description -->
+                <h4 class="h-desc t-left normal"> We currently default to the approaches of teachers, acting as knowledge intermediaries.  In the diverse, fast-changing world of business, this can be unnecessarily slow. We often fight against  irrelevance to founders' current challenges and context. <h4>
+
+<h4 class="h-desc t-left normal"> The  copy-paste flatness of one-way education will give rise to  multi-faceted, peer-to-peer methods that focus on the learner, not the  teacher. Collective learn by doing.</h4>
+
+                <!-- Accordion -->
+                <div class="accordion why-oxygen-accordion bold" id="accordion">
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark" data-toggle="collapse" data-parent="#accordion" href="#coll-one">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> Entrepreneurship is a learnable craft
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-one" class="accordion-body collapse in">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                <p>You may have heard of Jiro Ono. For those of you who haven’t, Jiro is one of the best sushi chefs in Japan. It is considered one of the greatest honours to work with him. Only those who have the utmost devotion to becoming a sushi chef receive a place as his apprentice.
+                                <p>The first ten years of an apprenticeship with Jiro is spent exclusively on rice. That’s right, those little grains can take up to a decade to master.
+                                <p>Once you’ve worked with Jiro for ten years however, you can progress.                                
+                                <p><a href="http://saintsal.com/craft/">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark collapsed" data-toggle="collapse" data-parent="#accordion" href="#coll-two">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> Why startups are so different for The Next Billion
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-two" class="accordion-body collapse">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                <p>Our approach has always been to calibrate education to the learners. Learn from them and adapt the teaching. 
+                                <p>We've learned lot of what we think of as universal only applies to the richest billion in the world:
+                                <ul>
+                                    <li>Copycats
+                                    <li>Word Of Mouth
+                                    <li>Premature Scale
+                                    <li>Trust
+                                    <li>Credit And Ethics
+                                    <li>Time Is Not Money
+                                    <li>Price Competitiveness
+                                <p><a href="http://saintsal.com/the-next-billion/">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark collapsed" data-toggle="collapse" data-parent="#accordion" href="#coll-three">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> A startup accelerator for the world’s poorest
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-three" class="accordion-body collapse">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                <p>The time to enable the world’s unlikely tech founders is now. Here are four reasons why.
+                                <p>I want to create a new type of grassroots startup accelerator to empower the poorest in the world. The opportunity is investable, immediate, and possibly worth billions. But I need your help.
+                                <p><a href="https://medium.com/@SaintSal/a-startup-accelerator-for-the-worlds-poorest-ca9a1a6c9da0">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark collapsed" data-toggle="collapse" data-parent="#accordion" href="#coll-four">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> True Ecosystems
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-four" class="accordion-body collapse">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                <p>Accelerators have taken a very visible role in startup ecosystems, but the narrow focus of the accelerator model is leading most communities away from other opportunities.  At the moment all accelerators use the same selection criteria: who has the greatest ambition to grow. 
+                                <p>This analysis points out that high-growth startup ecosystems typically have more diverse roots, and describes strategic models for investment from a community leader and governement perspective.
+                                <p><a href="http://blog.foundercentric.com/true-ecosystems/">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark collapsed" data-toggle="collapse" data-parent="#accordion" href="#coll-five">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> No more hubs: startup community is P2P
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-five" class="accordion-body collapse">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                Startup capitals are an out-dated concept.
+                                
+                                Global startup culture is becoming more networked and less top-down. The fastest-growing startup communities aren't trying to be the best-in-region or playing a zero-sum game, they're embracing the connections to other places. At a global level, our community behaviour is peer-to-peer. Centralisation is becoming a liability; rivalries get in the way far too often.
+                                <p><a href="http://saintsal.com/no-more-hubs-startup-community-is-p2p/">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+                    <!-- Accordion Tab -->
+                    <div class="panel transparent">
+                        <!-- Heading -->
+                        <div class="accordion-heading">
+                            <!-- Acordion Header -->
+                            <a class="accordion-toggle dark collapsed" data-toggle="collapse" data-parent="#accordion" href="#coll-four">
+                                <!-- Header Icon -->               <!-- Header -->
+                                <span class="positive-s"></span> How I Discovered My Ambition
+                            </a>
+                        </div><!-- End Heading -->
+                        <!-- Details -->
+                        <div id="coll-four" class="accordion-body collapse">
+                            <!-- Inner -->
+                            <div class="accordion-inner">
+                                <p>I should have seen it coming.
+
+                                <p>It's one of those things that people talk about, but their descriptions don't do justice to the experience. Now that I'm back, I have the feeling that something life-changing happened to me, but in a soft, subtle way. Like, hang on, what just happened? Where did this new energy come from?
+
+                                <p><a href="http://saintsal.com/ambition/">Read more...</a>
+                            </div><!-- End Inner -->
+                        </div><!-- End Details -->
+                    </div><!-- End Accordion Tab -->
+
+                </div><!-- End Accordion Menu -->
+            </div><!-- End Right Div -->
+            <div class="clear"></div>
+        </div><!-- End Inner Div -->
+    </section><!-- End Why We Section -->
+
+
+	
+	<!-- Blockquote -->
+	<section id="blockquote">
+
+		<div class="inner no-padding">
+			<!-- Your Text -->
+			<p class=" normal white blockquote">Empowering technology entrepreneurs of all descriptions.
+		</div>
+
+	</section><!-- End Blockquote Section -->
 
 	
 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- History -->
+	<section id="history" class="container parallax3">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<div class="inner history">
 
-	<!-- SmoothScroll -->
-	<script src="js/minified/SmoothScroll.min.js"></script>
+			<!-- Header -->
+			<h1 class="header light dark">Our History</h1>
 
-	<!-- Classie -->
-	<script src="js/minified/classie.min.js"></script>
+			<ul class="timeline">
 
-	<!-- One Page Nav -->
-	<script src="js/minified/jquery.nav.min.js"></script>
+				<!-- Time -->
+				<li class="time ">2010</li>
 
-	<!-- AjaxChimp -->
-	<script src="js/minified/jquery.ajaxchimp.min.js"></script>
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
 
-	<!-- Swipebox -->
-	<script src="js/minified/jquery.swipebox.min.js"></script>
+					<!-- Header -->
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<p class="history-head ">Leancamp launched. Creates the first strong links from Lean Startup to The Business Model Canvas and User Experience Design. Europe's introduction to Lean Startup.</p>
 
-	<!-- Expandable Gallery on 2 Block Column -->
-	<script src="js/minified/expandableGallery.min.js"></script>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
 
-	<!-- Counter Up -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-	<script src="js/minified/jquery.counterup.min.js"></script>
+				<li class="time">2011</li>
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<!-- Description -->
+					<p class="history-head">Leanspark - the first European Lean Startup Conference, held in Sofia, Bulgaria</p>
 
-	<!-- Quicksand JS -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="js/minified/jquery-css-transform.min.js"></script>
-	<script src="js/minified/jquery-animate-css-rotate-scale.min.js"></script>
-	<script src="js/minified/jquery.quicksand.min.js"></script>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
 
-	<!-- Headhesive -->
-	<script src="js/minified/headhesive.min.js"></script>
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<p class="history-head ">Leancamp expands to Amsterdam</p>
 
-	<!-- ScrollReveal -->
-	<script src="js/minified/scrollReveal.min.js"></script>
 
-	<!-- Custom JS -->
-	<script src="js/source.js"></script>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
 
-	<!-- Expandable Navigation Menu -->
-	<script src="js/minified/expandableNav.min.js"></script>
 
+				<li class="time">2012</li>
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+                    <img class="logo" src="images/logos/foundercentriclogo.svg">
+					<p class="history-head">Founder Centric created to raise the level of startup education in Europe.  We deliver most of the education for almost all of Europe's first accelerators, from London, to Tallinn, to Sofia.</p>
+
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<p class="history-head ">Leancamp expands to Barcelona and Berlin.</p>
+
+
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+
+
+				<li class="time">2013</li>
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<!-- Description -->
+					<p class="history-head">Leancamp expands to Rotterdam and Cologne, partners with Pirate Summit.</p>
+
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/foundercentriclogo.svg">
+					<!-- Description -->
+					<p class="history-head">Official release of The Mom Test, Founder Centric's contribution to Customer Development.</p>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Time -->
+				<li class="time">2014</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/foundercentriclogo.svg">
+					<!-- Header -->
+					<p class="history-head ">Founder Centric moves from training to programme design. We design mentoring programmes,  Masters' curricula, accelerators and global entrepreneurship prizes for: Unilever, UCL, Oxford University, Orange, Barclays Bank, The Royal Academy Of Engineering.</p>
+
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<!-- Header -->
+					<p class="history-head ">Now running in 15 cities, including San Francisco in collaboration with The Lean Startup Conference.</p>
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+                    <img class="logo" src="images/logos/foundercentriclogo.svg">
+					<!-- Description -->
+					<p class="history-head">Digital Business Academy launches, with Tech City, Cambridge and UCL.</p>
+
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/leancamplogo.svg">
+					<!-- Header -->
+					<p class="history-head">Lean Startup Circle adopts P2P formats globally, based on Leancamp.  Leancamp's peer-to-peer formats now runs around the globe.</p>
+			
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+					<!-- Date -->
+
+                    <img class="logo" src="images/logos/villagelogo.png">
+					<!-- Description -->
+					<p class="history-head">Village Accelerator launches in Sofia, Bulgaria.</p>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Time -->
+				<li class="time today">2015</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInLeft" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/sourcelogo_black.svg">
+					<!-- Header -->
+					<p class="history-head ">Source Institute founded</p>
+
+					<!-- Description -->
+					<p class="history-desc no-margin normal">Officially uniting all of these programmes and founders under a common goal:  empower founders from all over the globe through peer-to-peer startup education.</p>
+
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+				<!-- Note -->
+				<li class="note animated" data-animation="fadeInRight" data-animation-delay="200">
+
+                    <img class="logo" src="images/logos/thesourceslogo.svg">
+					<!-- Header -->
+					<p class="history-head ">The Sources launches in Sub-Saharan Africa</p>
+
+					<!-- Description -->
+					<p class="history-desc no-margin normal">An online course for African startups that shares practical advice on  Africa's unique environment.</p>
+					<!-- Arrow -->
+					<span class="note-arrow"></span>
+				</li>
+
+								<!-- Start Icon -->
+				<li class="start"><a href="#history" class="scroll dark-gray-degrade-diagonal"><span class="up-arrow"></span></a></li>
+				<li class="clear"></li>
+			</ul>
+
+		</div><!-- End Inner Div -->
+
+	</section><!-- End History Section -->
+
+
+
+
+
+    <section id="services" class="container">
+
+		<div class="inner">
+
+			<!-- Header -->
+			<h1 class="header light dark">Our Services</h1>
+
+			<!-- Description -->
+			<!-- <h4 class="h-desc dark">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and by the <span class="colored bold">charms</span> of pleasure of the moment, so blinded by desire, that they cannot foresee the pain </h4> -->
+
+			<div class="features-boxes row">
+
+				<!-- Box 1 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="0">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-ask3"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Startup Workshops </p>
+					<!-- Text -->
+					<p class="feature-text light">Workshops that first lay the groundwork for mindset shift, then layer on practical skills. We cover Team Alignment, The Growth Mindset, Lean Startup, Business Model Design, Learning From Customers, Decision Making and more.</p>
+				</div>
+
+
+				<!-- Box 2 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="100">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-buddhism6"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Accelerator Design</p>
+					<!-- Text -->
+					<p class="feature-text light">We designed most of the first European accelerator programmes, and moved on to apply the accelerator model in  new contexts - creative business, engineers in Africa, cleantech and  beyond.  We're the authors of The Accelerator Design Guide, and numerous  tools used in accelerators around the world.</p>
+				</div>
+
+
+				<!-- Box 3 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="200">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-matchstick"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Pre-accelerators</p>
+					<!-- Text -->
+					<p class="feature-text light">We designed and delivered Europe's best performing pre-accelerator programmes, with 50% entering accelerators or raising investment and 70+% launching viable businesses.</p>
+				</div>
+
+
+				<!-- Box 4 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="300">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-class"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Train The Trainer</p>
+					<!-- Text -->
+					<p class="feature-text light">Our unique approach to entrepreneur education is shared with our university and accelerator partners.  We've taught programme directors for the European Union, university professors across Western Europe, and a significant portion of trainers in the accelerator industry.</p>
+				</div>
+
+
+				<!-- Box 5 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="400">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-bald34"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Mentor Training </p>
+					<!-- Text -->
+					<p class="feature-text light">We  wrote the book on startup mentoring,  Mentor Impact, which was developed  by interviewing the top mentors in  the US and Europe.  We ourselves have been long-term mentors and  advisors to startups in accelerators and in later growth phases.</p>
+				</div>
+
+
+				<!-- Box 6 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="500">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-society"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Unconferences</p>
+					<!-- Text -->
+					<p class="feature-text light">We're the pioneers in practical  unconferences, having started Leancamp in 2010, which developed the Lean  Startup methodology globally.  We've used this format successful in  accelerators and universities all over Europe, including Oxford and UCL.</p>
+				</div>
+
+				<!-- Box 7 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="500">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-person228"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Immersion</p>
+					<!-- Text -->
+					<p class="feature-text light">Give your students a 48-hour taste of life as an entrepreneur, and practical skills training to move forward with their startup. Startup Immersion is a hands-on experience covering the muddy exploration and hard decisions that founders face when getting their  ideas off the ground. </p>
+				</div>
+
+				<!-- Box 8 -->
+				<div class="col-xs-6 col-sm-6 col-md-3 f-box animated" data-animation="fadeIn" data-animation-delay="500">
+					<!-- Icon -->
+					<a class="f-icon">
+                        <i class="flaticon-headphone4"></i> 
+					</a>
+					<!-- Header -->
+					<p class="feature-head uppercase">Creative Accelerator</p>
+					<!-- Text -->
+					<p class="feature-text light">Make your art pay your rent. A 3-week, part-time programme that enables creative people to make a viable business out of their talents.  Explores and makes sense of their possibilities, looking at clever ways artists make money, and moves them to run fun social experiments that reveal a commercial path.</p>
+				</div>
+
+
+
+				<div class="clear"></div>
+
+			</div><!-- End Features Boxes -->
+
+		</div> <!-- End Features Inner -->
+
+	</section><!-- End Features Section -->
+
+
+
+
+
+
+	<!-- Team -->
+	<section id="team" class="container" style="background: url(images/i4.jpg) center center fixed;">
+
+		<!-- Team Inner -->
+		<div class="inner team">
+
+			<!-- Header -->
+			<h1 class="header light dark"><span class="condiment">partners</span> </h1>
+
+
+			<!-- Members -->
+			<div class="team-members inner-details">
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/salim.jpeg" height="277px" alt="Salim Virani" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Salim Virani</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Founder</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: x-small">Salim founded 5 tech startups, directed at a world-leading marketing agency, and founded Leancamp, Founder Centric and Source Institute.  He's the author of Decision Hacks, Mentor Impact and the Accelerator Design Guide.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/saintsal"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="100">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/gerald.png" height="277px" alt="Gerald Vanderpuye" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Gerald Vanderpuye</h4>
+							<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, B2B Sales</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: x-small">Cofounder at BuyerDeck, Gerald was previously with Rackspace and Sun Microsystems where he was responsible for global development sales.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/geraldvdp"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="200">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/nemanja.jpeg" height="277px" alt="Nemanja Cerovac" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Nemanja Cerovac</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Growth</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: x-small">Currently launching Laptop Friendly, with aims of disrupting the commercial real estate industry. Previously co-founder of Fishing Booker, a marketplace startup that grew from Serbia to global market dominance in 2 years.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/ncerovac"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="300">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/josh.png" height="277px" alt="Josh Liu" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Josh Liu</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Hardware</h4>
+								<!-- Description -->
+								<p class="member-description">A pillar of the Lean Startup community in London and San Francisco, Josh is a hardware startup investor,    managing funds from Chinese and Taiwanese manufacturers.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/uniquejosh"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="400">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/robin.jpeg" height="277px" alt="Robin  Balser" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Robin  Balser</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Creative</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: x-small">Robin's nomadic story weaves through the tech-startup world in Estonia to business support in Kenya and Haiti to the fashion world in Berlin.  Robin's founded international outreach programmes, tech startups, and managed international accelerators.
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/rob_bal"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="500">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/lino.jpeg" height="277px" alt="Lino Velev" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Lino Velev</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Business Development</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: x-small">Lino has investment experience from both sides of the table. He's run a few startups, and is an early stage investor.He created Start it Smart, the first startup support institution in Bulgaria, and is now a partner in Obecto, a 25-person software development house.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/lvelev"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="600">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/bart.jpg" height="277px" alt="Bart Doorneweert" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Bart Doorneweert</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Agritech &amp; Business Models</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: xx-small">Bart is a true business model expert, with deep hands-on and academic research experience in agriculture tech around Europe, East Africa and India. He's developed curricula and startup comunities around Europe's top speciality universities, and developed the Partnership Canvas, adopted by Henry Chesbrough. 
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/bartdoorneweert"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="700">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/bobjansen.jpeg" height="277px" alt="Bob Jansen" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">Bob Jansen</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Corporate Venture Building</h4>
+								<!-- Description -->
+								<p class="member-description" style="font-size: xx-small">Bob is a co-founder of Firmhouse, a software development house that builds and launches products on behalf of clients like ING and Philips. He's a founder of Netherland's Lean Startup community, and active mentor in ICT and engineering accelerators.</p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/jansn"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+				<!-- Member -->
+				<div class="col-xs-6 col-sm-6 col-md-3 member animated" data-animation="fadeInUp" data-animation-delay="800">
+					<div class="member-inner">
+						<!-- Team Member Image -->
+						<a class="team-image">
+							<!-- Img -->
+							<img src="images/team/johnspindler.png" height="277px" alt="John Spindler" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">
+								<!-- Name -->
+								<h4 class="member-name normal">John Spindler</h4>
+								<!-- Position -->
+								<h4 class="member-position uppercase normal">Partner, Ecosystem Development</h4>
+								<!-- Description -->
+								<p class="member-description">John is the founder of Capital Enterprise and Capital List.  He's been the bedrock of London's startup community for more than a decade, having united the city's tech universities, and funding most the city's accelerators and other startup support initiatives. </p>
+								<!-- Socials -->
+								<div class="socials">
+									<!-- Twitter -->
+									<a href="http://twitter.com/capenterprise"><i class="fa fa-twitter"></i></a>
+								</div><!-- End Socials -->
+							</div> <!-- End Detail Inner -->
+						</div><!-- End Details -->
+					</div> <!-- End Member Inner -->
+				</div><!-- End Member -->
+
+				<!-- Clear -->
+				<div class="clear"></div>
+			</div><!-- End Members -->
+		</div><!-- End Team Inner -->
+	</section><!-- End Team Section -->
+
+
+
+	<!-- Fun Acts -->
+	<section id="fun-acts" class="relative">
+
+		<div class="inner fun-acts">
+
+			<!-- Header -->
+
+			<!-- Company Facts -->
+			<div class="facts">
+
+
+				<!-- Factor -->
+				<div class="col-xs-3 col-sm-6 col-md-3 col-md-offset-1 fact">
+					<!-- Fact Left -->
+					<a class="fact-icon">
+						<!-- Fact Icon -->
+						<i class="fa fa-briefcase"></i>
+					</a>
+					<!-- Factor Area -->
+					<div class="fact-number" data-perc="15">
+						<!-- Factor -->
+						<h1 class="factor light"></h1>
+						<!-- Factor Description -->
+						<h3 class="light uppercase">Countries</h3>
+					</div><!-- End Factor Area -->
+				</div><!-- End Factor -->
+
+
+				<!-- Factor -->
+				<div class="col-xs-3 col-sm-6 col-md-3 fact">
+					<!-- Fact Left -->
+					<a class="fact-icon">
+						<!-- Fact Icon -->
+						<i class="fa fa-pagelines"></i>
+					</a>
+					<!-- Factor Area -->
+					<div class="fact-number" data-perc="40">
+						<!-- Factor -->
+						<h1 class="factor"></h1>
+						<!-- Factor Description -->
+						<h3 class="light uppercase">thousand founders</h3>
+					</div><!-- End Factor Area -->
+				</div><!-- End Factor -->
+
+
+				<!-- Factor -->
+				<div class="col-xs-3 col-sm-6 col-md-3 fact">
+					<!-- Fact Left -->
+					<a class="fact-icon">
+						<!-- Fact Icon -->
+						<i class="fa fa-coffee"></i>
+					</a>
+					<!-- Factor Area -->
+					<div class="fact-number" data-perc="10">
+						<!-- Factor -->
+						<h1 class="factor light"></h1>
+						<!-- Factor Description -->
+						<h3 class="light uppercase">Active patners</h3>
+					</div><!-- End Factor Area -->
+				</div><!-- End Factor -->
+
+				<!-- Clear -->
+				<div class="clear"></div>
+			</div><!-- End Company Facts -->
+
+		</div><!-- End Fun Acts Inner -->
+
+	</section><!-- End Fun Acts Section -->
+
+
+		<!-- Video -->
+		<div id="P2" class="player video-container" data-property="{videoURL:'K3YxqjUvu1M',containment:'#video',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}"></div>
+		<!-- End Video -->
+
+	</section><!-- End Video Section -->
+
+
+
+
+	<!-- Site Socials and Address -->
+	<section id="contact" class="no-padding white-bg">
+		<div class="site-socials inner no-padding">
+			<!-- Socials -->
+			<div class="socials">
+				<!-- Facebook 
+				<a href="" target="_blank" class="social">
+					<i class="fa fa-facebook"></i>
+				</a> -->
+				<!-- Twitter -->
+				<a href="http://twitter.com/sourceinst" target="_blank" class="social">
+					<i class="fa fa-twitter fa-2x"></i>
+				</a>
+				<!-- Linkedin 
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-vimeo-square"></i>
+				</a> -->
+				<a href="mailto:info@source.institute" class="bold dark">info@source.institute</a>
+			</div>
+			<!-- Adress, Mail -->
+			<div class="address">
+				<!-- Phone Number, Mail -->
+				<!-- Top Button -->
+				<a href="#home" class="scroll top-button">
+					<i class="fa fa-angle-double-up"></i>
+				</a>
+			</div><!-- End Adress, Mail -->
+		</div><!-- End Inner -->
+	</section><!-- End Site Socials and Address -->
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<!-- Your Company Name -->
+		<!-- Copyright -->
+		<p class="copyright normal">© 2015 All Rights Reserved. </p>
+        <p>Some icons are <a href="http://www.flaticon.com">flaticon.com</a> by <a href="http://www.freepik.com">Freepik</a> under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. 
+	</footer><!-- End Footer -->
+
+
+
+	<!-- JS Files -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/modernizr-latest.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.superslides.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/jquery.slabtext.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<!-- Theme Panel JS -->
+	<script type="text/javascript" src="theme-panel/theme-panel.js"></script>
+
+	 <!-- End JS Files -->
 
 </body>
+
 </html>
