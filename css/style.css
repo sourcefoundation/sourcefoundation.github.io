@@ -2596,7 +2596,6 @@
 /* Contact */
 
 	#contact{
-		background:url(../images/i5.jpg) center fixed;
 		padding:10px 0 10px;
 	}
 
@@ -2716,6 +2715,7 @@
 		width:100%;
 		padding: 15px 10px;
 		background:url(../images/bottom-strip.png) center bottom no-repeat;
+        font-size: 3rem;
 	}
 
 	#contact .socials a.social{
