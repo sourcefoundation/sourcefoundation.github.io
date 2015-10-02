@@ -1046,7 +1046,7 @@
 
 /* Services */
 
-	#services{
+	#tools {
 		background:url(../images/i1.jpg) center center fixed;
 		padding:55px 0;
 		overflow: hidden;
@@ -1992,13 +1992,13 @@
 
 /* Why Oxygen */
 
-	#why-we{
+	#ethos{
 		background:url(../images/i4.jpg) center center fixed;
 		margin:0 auto;
 		min-height: 640px;
 	}
 
-	#why-we .left{
+	#ethos .left{
 		height: auto;
 		min-height: 525px;
 		z-index: 2;
@@ -2006,7 +2006,7 @@
 
 /* Iphone Holders */
 
-	#why-we .left .holder1{
+	#ethos .left .holder1{
 		width:230px;
 		height: 60px;
 		background:url(../images/ph1.png) left top no-repeat;
@@ -2015,7 +2015,7 @@
 		position: absolute;
 	}
 
-	#why-we .left .holder2{
+	#ethos .left .holder2{
 		width:232px;
 		height: 36px;
 		background:url(../images/ph2.png) left center no-repeat;
@@ -2024,7 +2024,7 @@
 		position: absolute;
 	}
 
-	#why-we .left .holder3{
+	#ethos .left .holder3{
 		width:202px;
 		height: 60px;
 		background:url(../images/ph3.png) left bottom no-repeat;
@@ -2712,13 +2712,13 @@
 
 /* Site Socials and Address */
 
-	#site-socials .socials{
+	#contact .socials{
 		width:100%;
 		padding: 15px 10px;
 		background:url(../images/bottom-strip.png) center bottom no-repeat;
 	}
 
-	#site-socials .socials a.social{
+	#contact .socials a.social{
 		font-size:18px;
 		color:#595959;
 		margin:15px auto;
@@ -2731,14 +2731,14 @@
 		transition: all 0.3s;
 	}
 
-	#site-socials .socials a.social:hover{
+	#contact .socials a.social:hover{
 		background:#131313;
 		color:white;
 	}
 
 /* Adress */
 
-	#site-socials .address{
+	#contact .address{
 		width: 100%;
 		height: auto;
 		margin:25px auto 0;
@@ -2746,7 +2746,7 @@
 
 /* Back to Top Button */
 
-	#site-socials .top-button{
+	#contact .top-button{
 		margin:30px auto 0;
 		display: inline-block;
 		width:40px;
@@ -2760,7 +2760,7 @@
 		transition: all 0.3s;
 	}
 
-	#site-socials .top-button:hover{
+	#contact .top-button:hover{
 		color:#3498db;
 	}
 
