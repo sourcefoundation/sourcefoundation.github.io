@@ -979,7 +979,7 @@
 		content:'';
 		z-index: 1;
 		position: absolute;
-		background:#fafafa;
+		/* background:#fafafa; */
 		border: 1px solid #686868;
 		border-radius:12px;
 		top:-1px;
@@ -1006,6 +1006,16 @@
 		transition: all 0.3s;
 		top:89%;
 		left:39%;
+	}
+
+	.about-icon img{
+		width: 84px;
+		position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 	}
 
 	.about-icon i{
@@ -3102,6 +3112,4 @@
 		color:white;
 		border:1px solid #404040;
 	}
-
-
 
