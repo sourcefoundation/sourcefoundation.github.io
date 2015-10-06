@@ -1032,17 +1032,7 @@
 
 /* About Box Hover Styles */
 
-	.about-box:hover .about-icon:before{
-		background:#252525;
-	}
 
-	.about-box:hover .about-icon:after{
-		background:#252525;
-	}
-
-	.about-box:hover .about-icon i{
-		color:#fff;
-	}
 
 	.about-box .about-head{
 		margin:30px auto 10px;
