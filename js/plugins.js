@@ -10,8 +10,9 @@ $(window).load(function() {
 });
 
  /* ==============================================
-Fit Videos
+Fit Videos uncomment if needed
 =============================================== */
+
 $(window).load(function(){
 	'use strict';
      $(".fit-vids").fitVids();
@@ -507,7 +508,7 @@ Count Factors
 
 
 /* ==============================================
-Video Script
+Video Script uncomment if needed
 =============================================== */
 
 jQuery(function(){
@@ -515,7 +516,7 @@ jQuery(function(){
 
             jQuery(".player").mb_YTPlayer();
 		});	
-	
+
 
 
 
@@ -563,7 +564,7 @@ $(document).ready(function() {
 
 
 /* ==============================================
-Google Map
+Google Map uncomment if needed
 =============================================== */
 
 $(document).ready(function() {
