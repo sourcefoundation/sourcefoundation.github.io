@@ -42,8 +42,7 @@ section {
 
 section#intro {
   margin-top: 20vh;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 20px
 }
 
 section#contact{
@@ -52,7 +51,7 @@ section#contact{
 }
 
 
-#intro img {
+#intro img.map {
   padding-top: 50px;
   width: 100%;
 }
@@ -72,15 +71,20 @@ div.service {
   padding-top: 20px;
 }
 
-#clients img, #services img {
+.brands img, #clients img, #services img {
   max-width: 100%;
   max-height: 60px;
 }
 
 div.brands{
-  padding-top: 40px;
+ font-weight: normal;
+ text-align: center;
+ padding-top: 80px;
 }
 
+.brands p {
+  margin-bottom: 40px;
+}
 .brands img {
   margin: 5px;
 }
