@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/source.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
 
 
 	</head>
@@ -148,6 +149,41 @@
       ga('create', 'UA-65208205-12', 'auto');
       ga('send', 'pageview');
 
+    </script>
+    <script>
+      $(function() {
+        rssurl = "http://community.source.institute/latest.rss";
+
+        console.log(1);
+        $.ajax({
+          url: rssurl,
+          crossDomain: true,
+          success: function(response) {
+            console.log(response);
+          },
+          error: function(response) {
+            console.log('error');
+            console.log(response);
+          },
+        });
+
+        console.log(2);
+        $.get(rssurl, function(data) {
+            var $xml = $(data);
+            $xml.find("item").each(function() {
+                var $this = $(this),
+                    item = {
+                        title: $this.find("title").text(),
+                        link: $this.find("link").text(),
+                        description: $this.find("description").text(),
+                        pubDate: $this.find("pubDate").text(),
+                        author: $this.find("author").text()
+                }
+                console.log($this);
+                console.log(this);
+            });
+        });
+      });
     </script>
 	</body>
 </html>
