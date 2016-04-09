@@ -88,6 +88,15 @@
         </div>
       </div>
    </section>
+     <section id="community">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Join our discussions</h2>
+        </div>
+        <div class="col-md-6 col-md-offset-3" id="community-content">
+        </div>
+      </div>
+    </section>
     <section id="clients">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -127,7 +136,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+   <section id="contact">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <a href="mailto:info@source.institute">info@source.institute</a>
@@ -152,14 +161,27 @@
     </script>
     <script>
       $(function() {
-        rssurl = "http://community.source.institute/latest.rss";
+        rssurl = "http://community.source.institute/latest.json";
 
         console.log(1);
         $.ajax({
           url: rssurl,
           crossDomain: true,
           success: function(response) {
-            console.log(response);
+            //Unhide community section
+            $('#community').css('display', 'block');
+
+            var maxPosts = 5;
+            var postCount = 0;
+
+            $.each(response.topic_list.topics, function( index, post) {
+              console.log(post);
+              if (!post.pinned && postCount < maxPosts) {
+                $("#community-content").append("<p><a href='http://community.source.institute/t/"+post.id+"'>"+post.title+"</a>");
+                postCount++;
+              }
+
+              });
           },
           error: function(response) {
             console.log('error');
@@ -167,23 +189,7 @@
           },
         });
 
-        console.log(2);
-        $.get(rssurl, function(data) {
-            var $xml = $(data);
-            $xml.find("item").each(function() {
-                var $this = $(this),
-                    item = {
-                        title: $this.find("title").text(),
-                        link: $this.find("link").text(),
-                        description: $this.find("description").text(),
-                        pubDate: $this.find("pubDate").text(),
-                        author: $this.find("author").text()
-                }
-                console.log($this);
-                console.log(this);
-            });
-        });
-      });
+     });
     </script>
 	</body>
 </html>

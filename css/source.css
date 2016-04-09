@@ -104,3 +104,15 @@ div.brands{
 #contact a {
   margin: 0 20px ;
 }
+
+#services {
+  padding-bottom: 0;
+}
+
+#community {
+  display: none;
+}
+
+#community a {
+  font-weight: normal;
+}
