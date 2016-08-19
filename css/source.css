@@ -109,10 +109,27 @@ div.brands{
   padding-bottom: 0;
 }
 
-#blog, #community {
+#community {
   display: none;
 }
 
 #blog a, #community a {
   font-weight: normal;
+}
+
+#blog .feedTitle {
+  display: none;
+}
+
+#blog ul {
+  padding: 0;
+}
+
+#blog ul li {
+  list-style-type: none;
+  margin: 0 0 10px;
+}
+
+#blog #creditfooter {
+  display: none;
 }

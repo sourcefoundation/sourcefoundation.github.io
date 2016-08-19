@@ -110,9 +110,12 @@
      <section id="blog">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h2>Our blog</h2>
+          <h2>From our blog</h2>
         </div>
         <div class="col-md-6 col-md-offset-3" id="blog-content">
+          <script src="http://feeds.feedburner.com/sourceinstituteblog?format=sigpro" type="text/javascript" ></script><noscript><p><a href="http://feeds.feedburner.com/sourceinstituteblog">
+            <i class="fa fa-2x fa-rss"></i>
+          </a></p> </noscript>
         </div>
       </div>
     </section>
@@ -196,7 +199,6 @@
     <script>
       $(function() {
         forumrssurl = "http://community.source.institute/latest.json";
-        blogrssurl = "http://feeds.feedburner.com/sourceinstituteblog";
 
         console.log(1);
         $.ajax({
@@ -224,32 +226,7 @@
           },
         });
 
-        $.ajax({
-          url: blogrssurl,
-          crossDomain: true,
-          success: function(response) {
-            //Unhide community section
-            $('#blog').css('display', 'block');
-
-            var maxPosts = 5;
-            var postCount = 0;
-
-            $.each(response.topic_list.topics, function( index, post) {
-              console.log(post);
-              if (!post.pinned && postCount < maxPosts) {
-                $("#blog-content").append("<p><a href='"+post.url+"'>"+post.title+"</a>");
-                postCount++;
-              }
-
-              });
-          },
-          error: function(response) {
-            console.log('error');
-            console.log(response);
-          },
-        });
-
-     });
+      });
     </script>
 	</body>
 </html>
