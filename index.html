@@ -200,7 +200,6 @@
       $(function() {
         forumrssurl = "http://community.source.institute/latest.json";
 
-        console.log(1);
         $.ajax({
           url: forumrssurl,
           crossDomain: true,
@@ -212,7 +211,6 @@
             var postCount = 0;
 
             $.each(response.topic_list.topics, function( index, post) {
-              console.log(post);
               if (!post.pinned && postCount < maxPosts) {
                 $("#community-content").append("<p><a href='http://community.source.institute/t/"+post.id+"'>"+post.title+"</a>");
                 postCount++;
