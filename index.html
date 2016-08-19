@@ -107,6 +107,15 @@
         </div>
       </div>
    </section>
+     <section id="blog">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Our blog</h2>
+        </div>
+        <div class="col-md-6 col-md-offset-3" id="blog-content">
+        </div>
+      </div>
+    </section>
      <section id="community">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -186,11 +195,12 @@
     </script>
     <script>
       $(function() {
-        rssurl = "http://community.source.institute/latest.json";
+        forumrssurl = "http://community.source.institute/latest.json";
+        blogrssurl = "https://medium.com/feed/source-institute";
 
         console.log(1);
         $.ajax({
-          url: rssurl,
+          url: forumrssurl,
           crossDomain: true,
           success: function(response) {
             //Unhide community section
@@ -203,6 +213,31 @@
               console.log(post);
               if (!post.pinned && postCount < maxPosts) {
                 $("#community-content").append("<p><a href='http://community.source.institute/t/"+post.id+"'>"+post.title+"</a>");
+                postCount++;
+              }
+
+              });
+          },
+          error: function(response) {
+            console.log('error');
+            console.log(response);
+          },
+        });
+
+        $.ajax({
+          url: blogrssurl,
+          crossDomain: true,
+          success: function(response) {
+            //Unhide community section
+            $('#blog').css('display', 'block');
+
+            var maxPosts = 5;
+            var postCount = 0;
+
+            $.each(response.topic_list.topics, function( index, post) {
+              console.log(post);
+              if (!post.pinned && postCount < maxPosts) {
+                $("#blog-content").append("<p><a href='"+post.url+"'>"+post.title+"</a>");
                 postCount++;
               }
 

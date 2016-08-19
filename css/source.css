@@ -109,10 +109,10 @@ div.brands{
   padding-bottom: 0;
 }
 
-#community {
+#blog, #community {
   display: none;
 }
 
-#community a {
+#blog a, #community a {
   font-weight: normal;
 }
