@@ -26,6 +26,7 @@ h1#logo {
   height: 63px;
   background-color: #000;
   padding-bottom: 5em;
+  margin-left: -15px;
   text-indent: -9999px;
   background: url(../images/source_logo_200.png) center center no-repeat;
   background-size: 100%;
