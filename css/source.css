@@ -20,13 +20,12 @@ body {
   color: #fff;
 }
 
-
 h1#logo {
   z-index: 0;
-  width: 300px;
-  height: 75px;
-  padding: 250px 50px 250px 0px;
+  width: 250px;
+  height: 63px;
   background-color: #000;
+  padding-bottom: 5em;
   text-indent: -9999px;
   background: url(../images/source_logo_200.png) center center no-repeat;
   background-size: 100%;
@@ -48,6 +47,8 @@ section {
 
 section#intro {
   margin-top: 20vh;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 18px;
   line-height: 1.4;
 }
@@ -83,6 +84,10 @@ div.service {
   max-height: 60px;
 }
 
+.brands div {
+    height: 80px;
+}
+
 div.brands{
  font-weight: normal;
  text-align: center;
@@ -103,7 +108,7 @@ div.brands{
 }
 
 #contact {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 70px;
   text-align: center;
 }
