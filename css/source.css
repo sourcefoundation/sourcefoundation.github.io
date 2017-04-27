@@ -16,19 +16,24 @@ body {
   font-family: 'Oxygen', sans-serif;
   font-size: 20px;
   line-height: 25.5px;
-  background: #000;
-  color: #fff;
+  background: #fafafa;
+  color: #202020;
+}
+
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h1#logo {
   z-index: 0;
-  width: 250px;
-  height: 63px;
+  width: 300px;
+  height: 70px;
   background-color: #000;
   padding-bottom: 5em;
-  margin-left: -15px;
+  margin-left: -60px;
   text-indent: -9999px;
-  background: url(../images/source_logo_200.png) center center no-repeat;
+  background: url(../images/source_logo.svg) no-repeat left center;
   background-size: 100%;
   margin-top: -13px;
 }
@@ -59,8 +64,10 @@ section#contact{
   min-height: 50vh;
 }
 
+section#services{
+}
 
-#intro img.map {
+#programs img.map {
   padding-top: 50px;
   width: 100%;
 }
@@ -145,4 +152,8 @@ div.brands{
 
 #blog #creditfooter {
   display: none;
+}
+
+#books img {
+  width: 100%;
 }
