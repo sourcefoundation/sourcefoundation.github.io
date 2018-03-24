@@ -46,7 +46,6 @@ h1#logo {
 section {
   display: block;
   position: relative;
-  min-height: 60vh;
   width: 100%;
   padding-bottom: 160px;
 }
@@ -108,7 +107,7 @@ div.brands{
   margin: 5px;
 }
 
-#clients {
+#clients, #programs h1 {
   font-size: 32px;
   line-height: 60px;
   text-align: center;
