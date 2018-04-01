@@ -154,3 +154,9 @@ div.brands{
 #books img {
   width: 100%;
 }
+
+#people img {
+  width: 25px;
+  border-radius: 12px;
+  margin: 0 .2em;
+}
