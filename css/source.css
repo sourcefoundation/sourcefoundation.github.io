@@ -123,6 +123,11 @@ div.brands{
   margin: 0 20px ;
 }
 
+#contact .privacy {
+  font-size: 14px;
+  line-height:20px;
+}
+
 #services {
 }
 
